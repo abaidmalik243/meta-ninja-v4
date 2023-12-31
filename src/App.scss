@@ -65,3 +65,39 @@
   .weaponCart{
     background-image: url('../src/Components/Weapons/Images/wepon\ Cart.png');
   }
+
+
+
+  
+  .bg-effect{
+    background-image: url('../src/Components/assets/backgroundEffect.png');
+    background-size: cover;
+    background-attachment: fixed;
+    
+  }
+  
+  
+  .footerBackground{
+    background-image: url('../src/Components/assets/footerBackground.png');
+    background-size: cover;
+  }
+  .character-background{
+    background-image: url('../src/Components/assets/firstEnemy.png');
+    background-size: 100% 100%;
+    
+  }
+  
+  
+  
+  
+  .characterBox {
+    background-color:yellow;
+    clip-path: polygon(20% 0, 100% 0, 79% 100%, 0% 100%);
+  }
+  
+  .character1{
+    background-image: url('../src/Components/assets/enemyCharacter.png');
+    background-size: 100% 100%;
+    
+  }
+  
