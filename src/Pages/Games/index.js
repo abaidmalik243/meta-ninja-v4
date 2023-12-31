@@ -8,12 +8,12 @@ import MetaFooter from '../../Components/MetaFooter';
 function GamesPage() {
     return (
         <>
-            {/* <Navbar />
+            {/* <Navbar />*/}
             <MapSection />
-            <Weapons /> */}
+            {/* <Weapons />  */}
 
-            <Enemy />
-            <MetaFooter />
+            {/* <Enemy />
+            <MetaFooter /> */}
 
 
             {/* <Video/> */}
