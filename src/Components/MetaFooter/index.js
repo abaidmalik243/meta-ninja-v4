@@ -13,10 +13,10 @@ const MetaFooter = () => {
         <>
             <div className='bg-black h-[100vh] flex items-center'>
                 <div className='footerBackground  h-[60vh] w-full relative flex items-center'>
-                    <div className='flex w-[60%] m-auto h-[50px] justify-between'>
-                        <img src={footerBrand1} width="90px" alt="" />
-                        <img src={footerBrand2} className='w-[250px]' alt="" />
-                        <img src={footerBrand3} alt="" />
+                    <div className='flex w-[50%] m-auto h-[50px] justify-between'>
+                        <img src={footerBrand1} width="15%" alt="" />
+                        <img src={footerBrand2} width="30%" alt="" />
+                        <img src={footerBrand3} width="18%" alt="" />
                     </div>
                 </div>
 
