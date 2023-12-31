@@ -4,6 +4,7 @@ import './App.scss';
 import Video from '../src/Components/Video'
 import StreetBoy from './Pages/StreetBoy';
 import GamesPage from './Pages/Games';
+import LandingPage from './Pages/StreetBoy/LandingPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     {/* <StreetBoy /> */}
 
     <GamesPage />
+    <LandingPage/>
     </>
     
   );
