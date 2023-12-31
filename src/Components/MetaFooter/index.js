@@ -12,11 +12,24 @@ const MetaFooter = () => {
     return (
         <>
             <div className='bg-black h-[100vh] flex items-center'>
-                <div className='footerBackground  h-[60vh] w-full relative flex items-center'>
-                    <div className='flex w-[50%] m-auto h-[50px] justify-between'>
+                <div className='footerBackground  h-[60vh] w-full '>
+                    <div className='flex w-[50%] mx-auto mt-[12%] h-[50px] justify-between'>
                         <img src={footerBrand1} width="15%" alt="" />
                         <img src={footerBrand2} width="30%" alt="" />
                         <img src={footerBrand3} width="18%" alt="" />
+                    </div>
+                    <div className='w-[25%] mx-auto mt-[100px] h-[50px] justify-between'>
+                        <h1 className='font-[700] text-center'>FIND US ON</h1>
+                        <div className='flex justify-center'>
+                    <i className="fa-brands text-lg fa-tiktok"></i>
+                    <i className="fa-brands text-lg ml-2  fa-instagram"></i>
+                    <i className="fa-brands text-lg ml-2  fa-linkedin"></i>
+                    <i className="fa-brands text-lg ml-2 fa-youtube"></i>
+                    <i className="fa-brands text-lg ml-2 fa-twitter"></i>
+                    <i className="fa-brands text-lg ml-2 fa-facebook"></i>
+                    </div>
+
+
                     </div>
                 </div>
 
