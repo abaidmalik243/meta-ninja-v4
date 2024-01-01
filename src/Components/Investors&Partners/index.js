@@ -2,6 +2,9 @@ import React from 'react';
 import logo from '../assets/MetaNinjaLogo.png';
 import leftArrow from '../assets/forwordArrow.png';
 import rightArrow from '../assets/rightForwordArrow.png';
+import partners from '../assets/partners.png';
+import stroke from '../assets/mapStroke.png';
+
 
 
 
@@ -10,8 +13,8 @@ const Investors = () => {
 
     return (
         <>
-  <div className='mapBackgrounfImg'>
-    <div className='w-full bg-[rgb(255,191,0)] p-6'>
+  <div className='bg-effect'>
+    <div className='w-full bg-[#ffb300] p-6'>
         <div>
 <img src={logo} className='mx-auto h-[100px]' alt="" />
 </div>
@@ -29,10 +32,16 @@ const Investors = () => {
 
     </div>
 
+<div className='bg-effect bg-black'>
+<div className='flex items-center w-full justify-between'>
+    <img src={stroke} />
+    <h2 className='text-[#ffb300] text-4xl font-[700]'>INVESTORS AND PARTNERS</h2>
+    <img src={stroke} />
 
-
+</div>
 <div>
-    <img src="" alt="" />
+    <img  className='w-full' src={partners} alt="" />
+</div>
 </div>
 
 

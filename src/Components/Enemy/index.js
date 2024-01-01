@@ -7,8 +7,8 @@ import firstEnemy from '../assets/firstEnemy1.png';
 import secoundEnemy from '../assets/secoundEnemy.png';
 import thirdEnemy from '../assets/thirdEnemy.png';
 import forthEnemy from '../assets/forthEnemy.png';
-import shining from '../assets/shining.png';
 import crousalDots from '../assets/lighBoxes.png';
+
 
 
 const Enemy = () => {
@@ -16,7 +16,7 @@ const Enemy = () => {
     return (
         <>
 
-            <div className='bg-effect bg-black h-[100vh] pt-[50px]' >
+            <div className='footerBackground h-[100vh] pt-[50px]' >
                 <div>
                     <img src={enemyBackgroundImage} className='h-[90vh] absolute w-[45%]' alt="" />
                     <div className='flex h-[50px] w-[40%] justify-between'>
