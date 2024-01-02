@@ -4,6 +4,8 @@ import MapSection from '../../Components/MapSection';
 import Weapons from '../../Components/Weapons';
 import Enemy from '../../Components/Enemy';
 import MetaFooter from '../../Components/MetaFooter';
+import Investors from '../../Components/Investors&Partners';
+
 
 function GamesPage() {
     return (
@@ -14,6 +16,8 @@ function GamesPage() {
 
             <Enemy />
             <MetaFooter />
+            <Investors />
+            
 
 
             {/* <Video/> */}

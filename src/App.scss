@@ -1,103 +1,103 @@
-.bg-net{
-    background-image: url('./images/net.png');
-}
-.b{
-    border: 2px solid red;
-}
-
-
-
-.nav-cutting{
-    // clip-path: polygon(100% 30%, 100% 100%, 3% 100%, 0% 70%, 0% 0%, 97% 0%);
-    // clip-path: polygon(100% 30%, 100% 100%, 2% 100%, 0% 70%, 0% 0%, 98% 0%);
-    // clip-path: polygon(100% 60%, 96% 100%, 0% 100%, 0% 40%, 4% 0%, 100% 0%);
-    clip-path: polygon(100% 60%, 98% 100%, 0% 100%, 0% 40%, 2% 0%, 100% 0%);
-  
-  
-  
+  .bg-net{
+      background-image: url('./images/net.png');
   }
-  .nav-cutting-parent{
-    // clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 0% 100%, 0% 0%, 100% 0%);
-    clip-path: polygon(100% 60%, 98% 100%, 0% 100%, 0% 40%, 2% 0%, 100% 0%);
-  // background-color: #eb47e2
+  .b{
+      border: 2px solid red;
+  }
+
+
+
+  .nav-cutting{
+      // clip-path: polygon(100% 30%, 100% 100%, 3% 100%, 0% 70%, 0% 0%, 97% 0%);
+      // clip-path: polygon(100% 30%, 100% 100%, 2% 100%, 0% 70%, 0% 0%, 98% 0%);
+      // clip-path: polygon(100% 60%, 96% 100%, 0% 100%, 0% 40%, 4% 0%, 100% 0%);
+      clip-path: polygon(100% 60%, 98% 100%, 0% 100%, 0% 40%, 2% 0%, 100% 0%);
     
-  
-  }
-  .cont_wallet-btn-parent{
-  // clip-path: polygon(100% 20%, 100% 100%, 5% 100%, 0% 80%, 0% 0%, 95% 0%);
-  clip-path: polygon(20% 20%, 90% 20%, 80% 80%, 10% 80%);
-  
-  }
-  .cont_wallet-btn{
-  clip-path: polygon(100% 20%, 100% 100%, 5% 100%, 0% 80%, 0% 0%, 95% 0%);
-  }
-  .navabr-cutting{
-    clip-path: polygon(100% 60%, 96% 100%, 0% 100%, 0% 40%, 4% 0%, 100% 0%);
-  
-  }
-  .footer-cutting-parent{
-    clip-path: polygon(100% 100%, 100% 20%, 4.5% 100%, 0% 80%, 0% 0%, 96.5% 0%);
+    
+    
     }
-  .footer-cutting{
-  clip-path: polygon(100% 20%, 100% 100%, 4.5% 100%, 0% 80%, 0% 0%, 96.5% 0%);
-  }
-  
-  .homePage{
-    background-image: url('../src/Components/Navabr/images/headerBackground.png');
-  }
-  .mapBackgrounfImg{
-    background-image: url('../src/Components/MapSection/Images/backgroundEffect.png');
-  }
-  .weaponeCartBG{
-    background-image: url('../src/Components/Weapons/Images/CartShap_.png');
-    // background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .MainCart{
-    background-image: url('../src/Components/Weapons/Images/CartShap_.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .GunName{
-    clip-path:  polygon(100% 0%, 100% 69%, 81.8% 100%, 0% 100%, 0% 0%);
-    background-color: #ffc400
-  }
-  .weaponCart{
-    background-image: url('../src/Components/Weapons/Images/wepon\ Cart.png');
-  }
+    .nav-cutting-parent{
+      // clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 0% 100%, 0% 0%, 100% 0%);
+      clip-path: polygon(100% 60%, 98% 100%, 0% 100%, 0% 40%, 2% 0%, 100% 0%);
+    // background-color: #eb47e2
+      
+    
+    }
+    .cont_wallet-btn-parent{
+    // clip-path: polygon(100% 20%, 100% 100%, 5% 100%, 0% 80%, 0% 0%, 95% 0%);
+    clip-path: polygon(20% 20%, 90% 20%, 80% 80%, 10% 80%);
+    
+    }
+    .cont_wallet-btn{
+    clip-path: polygon(100% 20%, 100% 100%, 5% 100%, 0% 80%, 0% 0%, 95% 0%);
+    }
+    .navabr-cutting{
+      clip-path: polygon(100% 60%, 96% 100%, 0% 100%, 0% 40%, 4% 0%, 100% 0%);
+    
+    }
+    .footer-cutting-parent{
+      clip-path: polygon(100% 100%, 100% 20%, 4.5% 100%, 0% 80%, 0% 0%, 96.5% 0%);
+      }
+    .footer-cutting{
+    clip-path: polygon(100% 20%, 100% 100%, 4.5% 100%, 0% 80%, 0% 0%, 96.5% 0%);
+    }
+    
+    .homePage{
+      background-image: url('../src/Components/Navabr/images/headerBackground.png');
+    }
+    .mapBackgrounfImg{
+      background-image: url('../src/Components/MapSection/Images/backgroundEffect.png');
+    }
+    .weaponeCartBG{
+      background-image: url('../src/Components/Weapons/Images/CartShap_.png');
+      // background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .MainCart{
+      background-image: url('../src/Components/Weapons/Images/CartShap_.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .GunName{
+      clip-path:  polygon(100% 0%, 100% 69%, 81.8% 100%, 0% 100%, 0% 0%);
+      background-color: #ffc400
+    }
+    .weaponCart{
+      background-image: url('../src/Components/Weapons/Images/wepon\ Cart.png');
+    }
 
 
 
-  
-  .bg-effect{
-    background-image: url('../src/Components/assets/backgroundEffect.png');
-    background-size: cover;
-    background-attachment: fixed;
     
-  }
-  
-  
-  .footerBackground{
-    background-image: url('../src/Components/assets/footerBackground.png');
-    background-size: cover;
-  }
-  .character-background{
-    background-image: url('../src/Components/assets/firstEnemy.png');
-    background-size: 100% 100%;
+    .bg-effect{
+      background-image: url('../src/Components/assets/backgroundEffect.png');
+      background-size: cover;
+      background-attachment: fixed;
+      
+    }
     
-  }
-  
-  
-  
-  
-  .characterBox {
-    background-color:yellow;
-    clip-path: polygon(20% 0, 100% 0, 79% 100%, 0% 100%);
-  }
-  
-  .character1{
-    background-image: url('../src/Components/assets/enemyCharacter.png');
-    background-size: 100% 100%;
     
-  }
-  
+    .footerBackground{
+      background-image: url('../src/Components/assets/footerBackground.png');
+      background-size: cover;
+    }
+    .character-background{
+      background-image: url('../src/Components/assets/firstEnemy.png');
+      background-size: 100% 100%;
+      
+    }
+    
+    
+    
+    
+    .characterBox {
+      background-color:yellow;
+      clip-path: polygon(20% 0, 100% 0, 79% 100%, 0% 100%);
+    }
+    
+    .character1{
+      background-image: url('../src/Components/assets/enemyCharacter.png');
+      background-size: 100% 100%;
+      
+    }
+    
