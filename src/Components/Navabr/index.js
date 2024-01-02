@@ -1,9 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import logo from '../../img/MetaNinjaLogo.png'
 import React, { useEffect } from 'react';
 import profile from '../../img/profile.png';
 // import logo from '../../img/MetaNinjaLogo.png';
 // import Dropdown from '../../Component/Dropdown';
-import BackgroundImg from './images/headerBackground.png'
+// import BackgroundImg from './images/headerBackground.png'
 
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -16,68 +17,53 @@ import MyImg2 from '../../img/image (1).png';
 import MyImg3 from '../Navabr/images/slider3rd.png';
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-  }
-  
-const Nav=()=>{
-    const navigation = [
-        { name: 'STRIKE', href: '#', current: true },
-        { name: 'GAMES', href: '#', current: false },
-        { name: 'NFT', href: '#', current: false },
-        { name: 'GALLERY', href: '#', current: false },
-        { name: 'MARKITPLACE', href: '#', current: false },
-        { name: 'COMMUNITY', href: '#', current: false },
-        // { name: <Dropdown />, href: '#', current: false },
-      ];
+  return classes.filter(Boolean).join(' ');
+}
 
-      const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
+const Navbar = () => {
+  const navigate = useNavigate();
+
+  const navigation = [
+    { name: 'STRIKE', href: '/strike', current: true },
+    { name: 'GAMES', href: '/games', current: false },
+    { name: 'NFT', href: '/nft', current: false },
+    { name: 'GALLERY', href: '/gallery', current: false },
+    { name: 'MARKITPLACE', href: '/marketplace', current: false },
+    { name: 'COMMUNITY', href: '/community', current: false },
+    // { name: <Dropdown />, href: '#', current: false },
+  ];
+
+  
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector('.main-wrapper');
+      if (window.scrollY > 7) {
+        nav.classList.add('nav-bg');
+      } else {
+        nav.classList.remove('nav-bg');
+      }
     };
 
-      useEffect(() => {
-        const handleScroll = () => {
-          const nav = document.querySelector('.main-wrapper');
-          if (window.scrollY > 7) {
-            nav.classList.add('nav-bg');
-          } else {
-            nav.classList.remove('nav-bg');
-          }
-        };
-    
-        // Set up the event listener
-        window.addEventListener('scroll', handleScroll);
-    
-        // Clean up the event listener
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-    return <div className='w-full m-auto'>
-        {/* <div>
+    // Set up the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  return <div className='w-full m-auto'>
+    {/* <div>
             <img src={BackgroundImg} alt=''/>
         </div> */}
- <Disclosure as="nav" className="main-wrapper w-full">
+    <Disclosure as="nav" className="main-wrapper w-full">
       {({ open }) => (
         <>
-        <div className='w-full'>
-            <img src={Icons} alt='' className='absolute mt-[300px] z-20 w-full'/>
-        </div>
-    
+          {/* <div className='w-full'>
+            <img src={Icons} alt='' className='absolute mt-[300px] z-20 w-full' />
+          </div> */}
+
           <div className="px-2 absolute w-full">
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
@@ -95,30 +81,30 @@ const Nav=()=>{
               <div className="flex flex-1 items-center justify-center lg:items-center lg:justify-between ml-[20px]">
                 <div className="flex flex-shrink-0 lg:w-[15%] items-center">
                   <img
-                    className="h-[90px] w-[150px]"
+                    className="h-[90px] w-[150px] cursor-pointer"
                     src={logo}
-                    
-                    alt="Your Company"
+                    onClick={() => navigate('/')}
+                    alt="Meta Ninja Strike - Logo"
                   />
                 </div>
                 <div className='nav-cutting-parent bg-[#ffc400] h-[44px] flex items-center lg:w-[70%]'>
-                <div className="hidden h-[40px] mx-0.5 lg:block bg-black nav-cutting w-full">
-                  <div className="flex space-x-4 justify-evenly py-2">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className=' text-[15px] font-medium text-white hover:text-[#ffc400] hover:border-b-2 hover:border-b-[#ffc400]'
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+                  <div className="hidden h-[40px] mx-0.5 lg:block bg-black nav-cutting w-full">
+                    <div className="flex space-x-4 justify-evenly py-2">
+                      {navigation.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className=' text-[15px] font-medium text-white hover:text-[#ffc400] hover:border-b-2 hover:border-b-[#ffc400]'
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                </div>
               </div>
-            
+
 
 
               <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0 lg:w-[15%]">
@@ -128,8 +114,8 @@ const Nav=()=>{
                     <Menu.Button className="relative flex rounded-full text-sm">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
-                        <div className='cont_wallet-btn-parent bg-[#EC9C2E] h-[70px]'>
-                      <button className='cont_wallet-btn sm:px-10 py-2 md:text-xl h-[70px] text-[10px] font-medium text-black w-full bg-[#ffc400]'>L O G I N</button>
+                      <div className='cont_wallet-btn-parent bg-[#EC9C2E] h-[70px]'>
+                        <button className='cont_wallet-btn sm:px-10 py-2 md:text-xl h-[70px] text-[10px] font-medium text-black w-full bg-[#ffc400]'>L O G I N</button>
                       </div>
                     </Menu.Button>
                   </div>
@@ -183,29 +169,26 @@ const Nav=()=>{
         </>
       )}
     </Disclosure>
-    <Carousel 
-  responsive={responsive}
-  autoPlay={true}
-  autoPlaySpeed={2000}
-  infinite={true} 
-  showDots={false}
-  arrows={false}
-  className='absolute -z-20'
+    {/* <Carousel
+      responsive={responsive}
+      autoPlay={true}
+      autoPlaySpeed={2000}
+      infinite={true}
+      showDots={false}
+      arrows={false}
+      className='absolute -z-20'
 
->
-  <div className='w-full'>
-    <img src={BackgroundImg} alt="" className='w-full h-[700px]'/>
+    >
+      <div className='w-full'>
+        <img src={BackgroundImg} alt="" className='w-full h-[700px]' />
+      </div>
+      <div className='w-full'>
+        <img src={MyImg3} alt="" className='w-full h-[700px]' />
+      </div>
+    </Carousel> */}
+
   </div>
-  <div className='w-full'>
-    <img src={MyImg3} alt="" className='w-full h-[700px]'/>
-  </div>
-  {/* <div className='w-full'>
-    <img src={MyImg2} alt="" className='w-full h-[700px]'/>
-  </div> */}
-</Carousel>
-    
-    </div>
 }
 
-export default Nav
+export default Navbar
 

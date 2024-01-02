@@ -1,19 +1,18 @@
 
+import { Suspense } from 'react';
+import RoutesComponent from 'Routes';
+import LoadingComponent from 'Components/LoadingComponent';
 import './App.css';
-import './App.scss';
-import Video from '../src/Components/Video'
-import StreetBoy from './Pages/StreetBoy';
-import GamesPage from './Pages/Games';
+
 
 function App() {
   return (
     <>
-     {/* <Video/> */}
-    {/* <StreetBoy /> */}
-
-    <GamesPage />
+      <Suspense fallback={<LoadingComponent />}>
+        <RoutesComponent />
+      </Suspense>
     </>
-    
+
   );
 }
 
