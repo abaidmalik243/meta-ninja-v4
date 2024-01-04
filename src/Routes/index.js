@@ -13,6 +13,7 @@ const GamesPage = lazy(() => import("Pages/GamesPage"));
 const FourZeroFour = lazy(() => import("Pages/404"));
 const ComingSoon = lazy(() => import("Pages/ComingSoon"));
 const AboutUs = lazy(() => import("Pages/AboutUs"));
+const LandingPage = lazy(() => import("Components/LandingPage"));
 
 
 function RoutesComponent() {
