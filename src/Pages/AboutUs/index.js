@@ -29,8 +29,7 @@ const AboutUs = () => {
     };
     return <div className="">
         <div className='w-full'>
-        <img src={Heading} alt='' className='w-full absolute mt-[10%]' /> 
-        {/* <img src={DownArrow} alt='' className='absolute mt-[10%] z-10' />  */}
+        <img src={Heading} alt='' className='w-full absolute mt-[10%] z-10' /> 
         <Carousel
                 responsive={responsive}
                 autoPlay={true}
@@ -52,7 +51,7 @@ const AboutUs = () => {
 
         {/* ************how metaninga Strik2************* */}
 
-        <div className='bg-black'>
+        <div className='bg-black -mt-[6.4%]'>
             <div className='absolute mt-[10%] ml-[6%]'>
                 <p className='text-[400%] text-white font-bold'>How</p>
                 <p className='text-[600%] text-[#ffc400] font-bold -mt-[3%]'>META NINJA STRIKE</p>
