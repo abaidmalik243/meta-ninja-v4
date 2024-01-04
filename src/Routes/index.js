@@ -12,6 +12,7 @@ const HomePage = lazy(() => import("Pages/HomePage"));
 const GamesPage = lazy(() => import("Pages/GamesPage"));
 const FourZeroFour = lazy(() => import("Pages/404"));
 const ComingSoon = lazy(() => import("Pages/ComingSoon"));
+const AboutUs = lazy(() => import("Pages/AboutUs"));
 
 
 function RoutesComponent() {
@@ -57,6 +58,12 @@ function RoutesComponent() {
                         index
                         path="/community"
                         element={<PublicRoute component={ComingSoon} layout={WebLayout} showHeader={false} />}
+                    />
+
+                    <Route
+                        index
+                        path="/aboutUs"
+                        element={<PublicRoute component={AboutUs} layout={WebLayout} showHeader={false} />}
                     />
 
                     <Route path="/*" element={<FourZeroFour />} />
