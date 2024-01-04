@@ -7,7 +7,7 @@ import Charactart from './Images/man.png'
 import DownArrow from './Images/DownArrows.png'
 import Carousel from 'react-multi-carousel';
 import SliderImg from './Images/slider3rd.png'
-
+import ThreeMan from './Images/ThreeMan.png'
 const AboutUs = () => {
     const responsive = {
         superLargeDesktop: {
@@ -29,7 +29,7 @@ const AboutUs = () => {
     };
     return <div className="">
         <div className='w-full'>
-        <img src={Heading} alt='' className='w-full absolute mt-[10%] z-10' /> 
+        <img src={Heading} alt='' className='w-full absolute mt-[10%]' /> 
         {/* <img src={DownArrow} alt='' className='absolute mt-[10%] z-10' />  */}
         <Carousel
                 responsive={responsive}
@@ -38,24 +38,21 @@ const AboutUs = () => {
                 infinite={true}
                 showDots={false}
                 arrows={false}
-                className=''
+                className='-z-10'
 
             >
                 <div className='w-full'>
-                    <img src={SliderImg} alt="" className='w-full h-[700px]' />
-                </div>
-                <div className='w-full'>
-                    <img src={SliderImg} alt="" className='w-full h-[700px]' />
+                    <img src={ThreeMan} alt="" className='w-full h-[700px]' />
                 </div>
                 {/* <div className='w-full'>
-                    <img src={MyImg2} alt="" className='w-full h-[700px]' />
+                    <img src={SliderImg} alt="" className='w-full h-[700px]' />
                 </div> */}
             </Carousel>
             </div>
 
         {/* ************how metaninga Strik2************* */}
 
-        <div className='-mt-[6.3%] bg-black'>
+        <div className='bg-black'>
             <div className='absolute mt-[10%] ml-[6%]'>
                 <p className='text-[400%] text-white font-bold'>How</p>
                 <p className='text-[600%] text-[#ffc400] font-bold -mt-[3%]'>META NINJA STRIKE</p>
