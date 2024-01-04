@@ -14,6 +14,7 @@ const FourZeroFour = lazy(() => import("Pages/404"));
 const ComingSoon = lazy(() => import("Pages/ComingSoon"));
 const AboutUs = lazy(() => import("Pages/AboutUs"));
 const LandingPage = lazy(() => import("Components/LandingPage"));
+const NFTPage = lazy(() => import("Components/NFT/Race"));
 
 
 function RoutesComponent() {
@@ -43,7 +44,7 @@ function RoutesComponent() {
                     <Route
                         index
                         path="/nft"
-                        element={<PublicRoute component={ComingSoon} layout={WebLayout} showHeader={false} />}
+                        element={<PublicRoute component={NFTPage} layout={WebLayout} showHeader={true} />}
                     />
                     <Route
                         index
