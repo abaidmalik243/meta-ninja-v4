@@ -23,7 +23,7 @@ export default function Index() {
   const slides = [
     { src: character1, alt: "Character 1" },
     { src: character2, alt: "Character 2" },
-    { src: videoCardLeft, alt: "Character 3" },
+    { src: videoCardLeft, alt: "Character 3"},
     { src: videoCard, alt: "Character 4" }, // Added third character
     // Add more slides as needed
   ];
