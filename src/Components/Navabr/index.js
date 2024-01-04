@@ -30,6 +30,7 @@ const Navbar = () => {
     { name: 'GALLERY', href: '/gallery', current: false },
     { name: 'MARKITPLACE', href: '/marketplace', current: false },
     { name: 'COMMUNITY', href: '/community', current: false },
+    { name: 'ABOUT US', href: '/aboutUs', current: false },
     // { name: <Dropdown />, href: '#', current: false },
   ];
 

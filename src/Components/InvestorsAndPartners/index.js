@@ -4,6 +4,12 @@ import leftArrow from '../assets/forwordArrow.png';
 import rightArrow from '../assets/rightForwordArrow.png';
 import partners from '../assets/partners.png';
 import stroke from '../assets/mapStroke.png';
+import logo1 from '../../images/company logos/AMBER_LOGOTYPE_transparent.png';
+import logo2 from '../../images/company logos/Official_unity_logo.png';
+import logo3 from '../../images/company logos/Polygon_blockchain_logo.png';
+import logo4 from '../../images/company logos/Unreal_Engine-Logo.wine.png';
+import logo5 from '../../images/company logos/hashkey-capital-logo-21D0FA5D42-seeklogo.com.png';
+
 
 const InvestorsAndPartners = () => {
 
@@ -36,7 +42,13 @@ const InvestorsAndPartners = () => {
 
                     </div>
                     <div>
-                        <img className='w-full' src={partners} alt="" />
+                        <div className='flex items-center justify-center flex-wrap'>
+                            <img src={logo1} className='w-[200px] m-3' alt="" />
+                            <img src={logo2} className='w-[200px] m-3' alt="" />
+                            <img src={logo3} className='w-[200px] m-3' alt="" />
+                            <img src={logo4} className='w-[200px] m-3' alt="" />
+                            <img src={logo5} className='w-[200px] m-3' alt="" />
+                        </div>
                     </div>
                 </div>
 
