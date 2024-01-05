@@ -12,7 +12,7 @@ import Cart from './Images/Cart.png'
 
 const Weapons=()=>{
 
-    return <div className="bg-black mapBackgrounfImg">
+    return <div className="bg-black bg-effect">
         <div className=''><img src={Header} alt=''/></div>
         <div className='mt-10'>
     
