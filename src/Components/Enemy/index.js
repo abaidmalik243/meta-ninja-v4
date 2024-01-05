@@ -8,6 +8,7 @@ import secoundEnemy from '../assets/secoundEnemy.png';
 import thirdEnemy from '../assets/thirdEnemy.png';
 import forthEnemy from '../assets/forthEnemy.png';
 import crousalDots from '../assets/lighBoxes.png';
+import shining from '../assets/shining.png';
 
 
 
@@ -16,12 +17,12 @@ const Enemy = () => {
     return (
         <>
 
-            <div className='footerBackground h-[100vh] pt-[50px]' >
+            <div className='bg-effect h-[100vh] bg-black pt-[50px]' >
                 <div>
-                    <img src={enemyBackgroundImage} className='h-[90vh] absolute w-[45%]' alt="" />
-                    <div className='flex h-[50px] w-[40%] justify-between'>
+                    <img src={enemyBackgroundImage} className='h-[] absolute  w-[45%]' alt="" />
+                    <div className='flex h-[50px] w-[50%] justify-between items-center'>
                         <img src={leftDot} alt="" />
-                        <img src={enemyText} alt="" />
+                        <img src={enemyText} className='mx-3' alt="" />
                         <img src={forwordArrow} alt="" />
 
                     </div>
@@ -29,15 +30,16 @@ const Enemy = () => {
                         <img src={crousalDots} alt="" />
                     </div>
                     <div className='flex w-full justify-end'>
-                        <div className='w-[80%] flex h-[400px] justify-end z-10'>
+                        <div className='w-[78%] flex  h-[550px] justify-end z-10'>
                             <img src={firstEnemy} className='mr-[-28px] w-[40%]' alt="" />
                             <img src={secoundEnemy} className='ml-[-176px] w-[40%]' alt="" />
                             <img src={thirdEnemy} className='ml-[-212px] w-[40%]' alt="" />
+                            {/* <img src={shining} className='absolute' alt="" /> */}
                             <img src={forthEnemy} className='ml-[-218px] w-[29.5%]' alt="" />      
                         </div>
                     </div>
 
-                    <div className=' h-[50px] flex justify-start float-right w-[71%]'>
+                    <div className=' h-[50px] flex  justify-start float-right w-[75%]'>
                         <img src={crousalDots} alt="" />
                     </div>
 
