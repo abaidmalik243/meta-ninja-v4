@@ -30,7 +30,8 @@
 
   .cont_wallet-btn-parent {
     /* clip-path: polygon(100% 20%, 100% 100%, 5% 100%, 0% 80%, 0% 0%, 95% 0%); */
-    clip-path: polygon(20% 20%, 90% 20%, 80% 80%, 10% 80%);
+    clip-path: polygon(10% 20%, 100% 20%, 90% 80%, 0% 80%);
+    
 
   }
 
@@ -121,4 +122,16 @@
 }
 .text-stroke-us {
   -webkit-text-stroke: 1px #ffc400; 
+}
+
+
+@font-face {
+  font-family: 'Asus Rog Regular';
+  src: local('Asus Rog Regular'),
+       url('./Components/assets/Fonts/Fonts/asusrog_regular.ttf') format('truetype'); /* Correct format and adjusted path */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Asus Rog Regular';
 }
