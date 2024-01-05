@@ -26,7 +26,7 @@ const MapSection=()=>{
         }
     };
 
-    return <div className='mapBackgrounfImg bg-black m-auto pt-4'>
+    return <div className='bg-effect bg-black m-auto pt-4'>
 
 
 <img src={MapHead} alt='' className='absolute w-full'/>

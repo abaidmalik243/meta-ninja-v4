@@ -7,7 +7,8 @@ import Charactart from './Images/man.png'
 import DownArrow from './Images/DownArrows.png'
 import Carousel from 'react-multi-carousel';
 import SliderImg from './Images/slider3rd.png'
-import ThreeMan from './Images/ThreeMan.png'
+import ThreeMan from './Images/ThreeCharacter.png'
+
 const AboutUs = () => {
     const responsive = {
         superLargeDesktop: {
@@ -29,7 +30,13 @@ const AboutUs = () => {
     };
     return <div className="">
         <div className='w-full'>
-        <img src={Heading} alt='' className='w-full absolute mt-[10%] z-10' /> 
+        <div className='w-full absolute mt-[8%] z-10 text-white text-center'> 
+        <p className='text-[100px] text-stroke'>ABOUT</p>
+        <p className='text-[100px] text-stroke-us -mt-[3%]'>US</p>
+        <p className='text-[35px] text-[#ffc400]'>ITS TIME TO KNOW US</p>
+        <div className=''><img src={DownArrow} alt='' className='m-auto w-[100px] cursor-pointer'/></div>
+        </div> 
+        {/* <img src={DownArrow} alt='' className='absolute mt-[10%] z-10' />  */}
         <Carousel
                 responsive={responsive}
                 autoPlay={true}
@@ -40,6 +47,9 @@ const AboutUs = () => {
                 className='-z-10'
 
             >
+                <div className='w-full'>
+                    <img src={ThreeMan} alt="" className='w-full h-[700px]' />
+                </div>
                 <div className='w-full'>
                     <img src={ThreeMan} alt="" className='w-full h-[700px]' />
                 </div>

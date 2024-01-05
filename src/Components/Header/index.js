@@ -8,6 +8,7 @@ import Icons from 'Components/Navabr/images/Group 3.png'
 // import MyImg2 from '../../img/image (1).png';
 import MyImg3 from '../Navabr/images/slider3rd.png';
 import BackgroundImg from 'Components/Navabr/images/headerBackground.png';
+import Curve from './images/GamingPagepicturecurve.png'
 
 const Header = () => {
 
@@ -43,7 +44,7 @@ const Header = () => {
                 infinite={true}
                 showDots={false}
                 arrows={false}
-                className='absolute -z-20'
+                className='absolute -z-10'
 
             >
                 <div className='w-full'>
@@ -56,6 +57,8 @@ const Header = () => {
                     <img src={MyImg2} alt="" className='w-full h-[700px]' />
                 </div> */}
             </Carousel>
+            <img src={Curve} alt='' className='w-full -mt-[6.8%] '/>
+
         </>
     )
 }
