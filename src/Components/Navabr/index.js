@@ -26,9 +26,9 @@ const Navbar = () => {
   const navigation = [
     { name: 'STRIKE', href: '/strike', current: true },
     { name: 'GAMES', href: '/games', current: false },
-    { name: 'NFT', href: '/nft', current: false },
+    { name: 'NFTMARKITPLACE', href: '/nft', current: false },
     { name: 'GALLERY', href: '/gallery', current: false },
-    { name: 'MARKITPLACE', href: '/marketplace', current: false },
+    // { name: 'MARKITPLACE', href: '/marketplace', current: false },
     { name: 'COMMUNITY', href: '/community', current: false },
     { name: 'ABOUT US', href: '/aboutUs', current: false },
     // { name: <Dropdown />, href: '#', current: false },
@@ -80,7 +80,7 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center lg:items-center lg:justify-between ml-[20px]">
-                <div className="flex flex-shrink-0 lg:w-[15%] items-center">
+                <div className="flex flex-shrink-0 lg:w-[15%] items-center z-10">
                   <img
                     className="h-[90px] w-[150px] cursor-pointer"
                     src={logo}
@@ -88,14 +88,14 @@ const Navbar = () => {
                     alt="Meta Ninja Strike - Logo"
                   />
                 </div>
-                <div className='nav-cutting-parent bg-[#ffc400] h-[44px] flex items-center lg:w-[70%]'>
+                <div className='nav-cutting-parent bg-[#ffc400] h-[44px] flex items-center lg:w-[83%] xl:w-[70%] z-10'>
                   <div className="hidden h-[40px] mx-0.5 lg:block bg-black nav-cutting w-full">
-                    <div className="flex space-x-4 justify-evenly py-2">
+                    <div className="flex justify-between text-center">
                       {navigation.map((item) => (
                         <a
                           key={item.name}
                           href={item.href}
-                          className=' text-[15px] font-medium text-white hover:text-[#ffc400] hover:border-b-2 hover:border-b-[#ffc400]'
+                          className='text-[15px] font-medium text-white hover:bg-[#ffc400] hover:text-black py-2.5 px-3 w-full h-full'
                           aria-current={item.current ? 'page' : undefined}
                         >
                           {item.name}
@@ -108,15 +108,15 @@ const Navbar = () => {
 
 
 
-              <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0 lg:w-[15%]">
+              <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0 lg:w-[17%]">
 
-                <Menu as="div" className="relative ml-3">
+                <Menu as="div" className="relative">
                   <div>
-                    <Menu.Button className="relative flex rounded-full text-sm">
+                     <Menu.Button className="relative flex rounded-full text-sm">
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">Open user menu</span>
-                      <div className='cont_wallet-btn-parent bg-[#EC9C2E] h-[70px]'>
-                        <button className='cont_wallet-btn sm:px-10 py-2 md:text-xl h-[70px] text-[10px] font-medium text-black w-full bg-[#ffc400]'>L O G I N</button>
+                      <div className='cont_wallet-btn-parent w-full bg-[#EC9C2E] h-[70px] z-10 xl:ml-6'>
+                        <button className='cont_wallet-btn px-8 lg:px-3 xl:px-5 md:text-[15px] h-[70px] text-[10px] font-medium text-black bg-[#ffc400] w-full'>Connect Wallet</button>
                       </div>
                     </Menu.Button>
                   </div>
@@ -150,7 +150,7 @@ const Navbar = () => {
           </div>
 
           <Disclosure.Panel className="lg:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2 ">
+            <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}

@@ -49,7 +49,7 @@ export default function Index() {
 
   return (
     <>
-      <div className="bg-[black] bg-opacity-90 bg-net relative">
+      <div className="bg-[black] bg-opacity-90 bg-net relative -mt-[5.4%] -z-20">
         <div className="py-[12px] flex items-center">
           <img src={list} alt="" className="z-1 w-[20vw] sm:w-[10vw]" />
           <img src={video} alt="" className="pt-6 ml-3 w-[30vw] sm:w-[20vw] md:mb-2 lg:mb-0 " />
