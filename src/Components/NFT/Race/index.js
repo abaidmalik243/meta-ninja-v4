@@ -22,7 +22,7 @@ export default function Index() {
             <img src={backForwardArrow} alt="" className="" />
             <h1 className="text-6xl font-[800] text-[#ffbf00]">Race</h1>
             <img src={forwardArrow} alt="" className="" />
-            <img src={rightZigZagLine} alt="" className="w-[20vw]" />
+            <img src={rightZigZagLine} alt="" className="w-[20vw]"/>
           </div>
         </div>
 
@@ -32,14 +32,14 @@ export default function Index() {
           <img
             src={leftArrowGroup}
             alt=""
-            className=" w-[10vw] lg:w-[6vw] cursor-pointer"
+            className=" w-[10vw] md:w-[6vw] cursor-pointer"
           />
           <div className="flex flex-col items-center relative ">
             <img src={Card} alt="" className="w-[20vw] " />
             <div className="absolute top-2 w-[90%]">
-              <img src={p1} alt="" />
-              <p classNamemt-12=" text-white">NAME</p>
-              <h1 className=" text-white bg-[#ffbf00] text-[12px] p-5">
+              <img src={p1} alt="" className="w-full"/>
+              <p className="text-center text-white top-[18vw] w-full absolute">NAME</p>
+              <h1 className="text-white bg-[#ffbf00] text-[12px] p-5 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
                 facilis eveniet, molestiae quae, amet sequi similique nam autem
                 necessitatibus velit nesciunt aliquam id debitis quod eligendi?
@@ -49,9 +49,9 @@ export default function Index() {
           <div className="flex flex-col items-center relative ">
             <img src={Card} alt="" className="w-[20vw] " />
             <div className="absolute top-2 w-[90%]">
-              <img src={p2} alt="" />
-              <p classNamemt-12="text-white">NAME</p>
-              <h1 className=" text-white bg-[#ffbf00] text-[12px] p-5">
+              <img src={p2} alt="" className="w-full"/>
+              <p className="text-center text-white top-[18vw] w-full absolute">NAME</p>
+              <h1 className="text-white bg-[#ffbf00] text-[12px] p-5 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
                 facilis eveniet, molestiae quae, amet sequi similique nam autem
                 necessitatibus velit nesciunt aliquam id debitis quod eligendi?
@@ -60,21 +60,22 @@ export default function Index() {
           </div>
           <div className="flex flex-col items-center relative ">
             <img src={Card} alt="" className="w-[20vw] " />
-            <div className="absolute top-2 w-[90%]">
-              <img src={p3} alt="" />
-              <p className="mt-12 text-white">NAME</p>
-              <h1 className=" text-white bg-[#ffbf00] text-[12px] p-5">
+            <div className="absolute top-2  w-[90%]">
+              <img src={p3} alt="" className="w-full"/>
+              <p className="text-center text-white top-[18vw] w-full absolute">NAME</p>
+              <h1 className="text-white bg-[#ffbf00] text-[12px] p-5 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
                 facilis eveniet, molestiae quae, amet sequi similique nam autem
                 necessitatibus velit nesciunt aliquam id debitis quod eligendi?
               </h1>
             </div>
           </div>
+         
 
           <img
             src={rightArrowGroup}
             alt=""
-            className=" w-[10vw] lg:w-[6vw] cursor-pointer"
+            className=" w-[10vw] md:w-[6vw] cursor-pointer"
           />
         </div>
         <div className="w-[65%] flex justify-between mx-auto">
