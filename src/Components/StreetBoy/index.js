@@ -23,7 +23,7 @@ const StreetBoy = () => {
         <>
             <div className=' bg-effect  bg-black'>
                 <img src={firstimg} alt="" className='' />
-                <div className='flex justify-between'>
+                <div className='flex justify-between pb-[3rem]'>
                     <div className='w-[60%]'>
                         <div className='px-[60px] '>
                             <div className='w-[60%] text-right z-50'>
@@ -39,7 +39,7 @@ const StreetBoy = () => {
                         </div>
                         <div className=''>
                             {/* <img src={smoke2} className='relative h-[100vh]' alt="" /> */}
-                            <img src={player} className='absolute  left-[100px] top-[14rem] z-50 h-[450px]' alt="" />
+                            <img src={player} className='absolute  left-[100px] top-[14rem] z-50 h-[500px]' alt="" />
                         </div>
                         <img src={Gradient} className='absolute bottom-0 w-[100%]' alt="" />
                     </div>

@@ -34,8 +34,8 @@ const MetaFooter = () => {
                 </div>
 
                 <div className='flex justify-between w-full  absolute'>
-                    <img src={footerCharacter1} className='h-[85vh] max-w-[30%]' alt="" />
-                    <img src={footerCharacter2} className='h-[85vh] max-w-[30%]' alt="" />
+                    <img src={footerCharacter1} className=' max-w-[30%]' alt="" />
+                    <img src={footerCharacter2} className=' max-w-[30%]' alt="" />
                 </div>
 
 

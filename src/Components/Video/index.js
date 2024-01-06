@@ -142,7 +142,7 @@ export default function Index() {
               </p>
             )}
           </span>
-          <img src={yellowGradient} alt="" className="absolute bottom-0" />
+          <img src={yellowGradient} alt="" className="absolute bottom-0 w-full" />
         </div>
       </div>
     </>
