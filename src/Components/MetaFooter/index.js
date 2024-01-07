@@ -11,7 +11,7 @@ const MetaFooter = () => {
 
     return (
         <>
-            <div className='bg-black h-[100vh] flex items-center'>
+            <div className='-[100vh] flex items-center'>
                 <div className='footerBackground  h-[60vh] w-full '>
                     <div className='flex w-[50%] mx-auto mt-[12%] h-[50px] justify-between'>
                         <img src={footerBrand1} width="15%" alt="" />

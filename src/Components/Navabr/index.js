@@ -54,7 +54,7 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  return <div className='w-full m-auto'>
+  return <div className='w-full m-auto '>
     {/* <div>
             <img src={BackgroundImg} alt=''/>
         </div> */}
@@ -65,7 +65,7 @@ const Navbar = () => {
             <img src={Icons} alt='' className='absolute mt-[300px] z-20 w-full' />
           </div> */}
 
-          <div className="px-2 absolute w-full">
+          <div className="px-2 absolute w-full z-20 b">
             <div className="relative flex items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden">
                 {/* Mobile menu button*/}

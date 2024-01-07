@@ -32,6 +32,7 @@ const Header = () => {
 
     return (
         <>
+        <div className='z-20'>
             <div className='w-full'>
                 <img src={Icons} alt='' className='absolute mt-[250px] z-20 w-full' />
             </div>
@@ -56,6 +57,7 @@ const Header = () => {
                     <img src={MyImg2} alt="" className='w-full h-[700px]' />
                 </div> */}
             </Carousel>
+            </div>
         </>
     )
 }

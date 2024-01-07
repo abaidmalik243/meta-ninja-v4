@@ -1,6 +1,38 @@
-  .bg-net {
-    background-image: url('./images/net.png');
-  }
+/* .bg-net-wrapper {
+  position: relative;
+  z-index: 1;
+} */
+
+/* .bg-net-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./images/net.png');
+  background-size: 100% ;
+  opacity: 0.2; 
+  z-index: -1;
+} */
+
+.gradient-shadow-bottom {
+  background: linear-gradient(
+    to bottom, 
+    rgba(255, 196, 0, 0.5) 0%, 
+    rgba(255, 196, 0, 0) 100%
+  );
+
+}
+.gradient-shadow-top {
+  background: linear-gradient(
+    to top, 
+    rgba(255, 196, 0, 0.5) 0%, 
+    rgba(255, 196, 0, 0) 100%
+  );
+
+}
+
 
   .b {
     border: 2px solid red;
@@ -17,6 +49,7 @@
 
 
   }
+  
 
   .nav-cutting-parent {
     /* clip-path: polygon(100% 70%, 100% 100%, 0% 100%, 0% 100%, 0% 0%, 100% 0%); */
